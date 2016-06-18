@@ -1,8 +1,6 @@
 #!/bin/bash
 set -o nounset -o errexit -o pipefail -o errtrace
 
-source ~/.variables
-
 cd $1
 
 export APP_NAME=$(cat Appfile | jq -r .application.name)
